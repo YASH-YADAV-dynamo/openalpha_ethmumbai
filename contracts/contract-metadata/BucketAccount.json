@@ -1,0 +1,980 @@
+{
+  "contractAddress": "0x97dc3f2d27e8054c982c71e40db4bce315496554",
+  "network": "ARC-TESTNET",
+  "deployerWalletId": "3c2464b2-8369-52e2-a782-800bbeca5396",
+  "contract_code_path": "/home/user/app/contracts/BucketAccount.sol",
+  "contract_compiled_code_path": "/home/user/app/contracts/out/BucketAccount.sol/BucketAccount.json",
+  "contract_network_and_links": {
+    "Arc Testnet": "https://explorer.testnet.arc.io/address/0x97dc3f2d27e8054c982c71e40db4bce315496554"
+  },
+  "contract_deployments": [
+    {
+      "chain": "Arc Testnet",
+      "address": "0x97dc3f2d27e8054c982c71e40db4bce315496554",
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0x97dc3f2d27e8054c982c71e40db4bce315496554",
+      "txHash": "0x90714358997445f49423dd90ca8b19c28c8de81f74781b5da7a9e86540021b7a",
+      "deployedAt": "2026-11-06T08:08:47.450Z"
+    }
+  ],
+  "abi": [
+    {
+      "type": "constructor",
+      "inputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "MAX_ASSETS",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "MAX_UNIVERSE",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "NO_TEMPLATE",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "TIP_BPS",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "TIP_CAP",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "cancelSip",
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "deposit",
+      "inputs": [
+        {
+          "name": "usdcAmount",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "driftBps",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "maxDriftBps",
+          "type": "uint16",
+          "internalType": "uint16"
+        },
+        {
+          "name": "perAssetBps",
+          "type": "int32[]",
+          "internalType": "int32[]"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "executeSip",
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "factory",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "follow",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "templateId",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "following",
+          "type": "bool",
+          "internalType": "bool"
+        },
+        {
+          "name": "version",
+          "type": "uint32",
+          "internalType": "uint32"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "followTemplate",
+      "inputs": [
+        {
+          "name": "templateId",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "follow_",
+          "type": "bool",
+          "internalType": "bool"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "holdings",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "tokens",
+          "type": "address[]",
+          "internalType": "address[]"
+        },
+        {
+          "name": "amounts",
+          "type": "uint256[]",
+          "internalType": "uint256[]"
+        },
+        {
+          "name": "valuesE18",
+          "type": "uint256[]",
+          "internalType": "uint256[]"
+        },
+        {
+          "name": "totalE18",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "initialize",
+      "inputs": [
+        {
+          "name": "owner_",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "registry_",
+          "type": "address",
+          "internalType": "contract IAssetRegistry"
+        },
+        {
+          "name": "templates_",
+          "type": "address",
+          "internalType": "contract ITemplateRegistry"
+        },
+        {
+          "name": "tokens",
+          "type": "address[]",
+          "internalType": "address[]"
+        },
+        {
+          "name": "weightsBps",
+          "type": "uint16[]",
+          "internalType": "uint16[]"
+        },
+        {
+          "name": "p",
+          "type": "tuple",
+          "internalType": "struct BucketParams",
+          "components": [
+            {
+              "name": "bandBps",
+              "type": "uint16",
+              "internalType": "uint16"
+            },
+            {
+              "name": "maxSlippageBps",
+              "type": "uint16",
+              "internalType": "uint16"
+            },
+            {
+              "name": "maxTradeBps",
+              "type": "uint16",
+              "internalType": "uint16"
+            },
+            {
+              "name": "cooldown",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        },
+        {
+          "name": "templateId",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "follow_",
+          "type": "bool",
+          "internalType": "bool"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "initialized",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool",
+          "internalType": "bool"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "lastRebalance",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint64",
+          "internalType": "uint64"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "owner",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "params",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "tuple",
+          "internalType": "struct BucketParams",
+          "components": [
+            {
+              "name": "bandBps",
+              "type": "uint16",
+              "internalType": "uint16"
+            },
+            {
+              "name": "maxSlippageBps",
+              "type": "uint16",
+              "internalType": "uint16"
+            },
+            {
+              "name": "maxTradeBps",
+              "type": "uint16",
+              "internalType": "uint16"
+            },
+            {
+              "name": "cooldown",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "paused",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool",
+          "internalType": "bool"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "rebalance",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "maxDriftBps",
+          "type": "uint16",
+          "internalType": "uint16"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "registry",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract IAssetRegistry"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "setParams",
+      "inputs": [
+        {
+          "name": "p",
+          "type": "tuple",
+          "internalType": "struct BucketParams",
+          "components": [
+            {
+              "name": "bandBps",
+              "type": "uint16",
+              "internalType": "uint16"
+            },
+            {
+              "name": "maxSlippageBps",
+              "type": "uint16",
+              "internalType": "uint16"
+            },
+            {
+              "name": "maxTradeBps",
+              "type": "uint16",
+              "internalType": "uint16"
+            },
+            {
+              "name": "cooldown",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "setPaused",
+      "inputs": [
+        {
+          "name": "p",
+          "type": "bool",
+          "internalType": "bool"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "setSip",
+      "inputs": [
+        {
+          "name": "amountUsdc",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "interval",
+          "type": "uint32",
+          "internalType": "uint32"
+        },
+        {
+          "name": "runs",
+          "type": "uint32",
+          "internalType": "uint32"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "setTargets",
+      "inputs": [
+        {
+          "name": "tokens",
+          "type": "address[]",
+          "internalType": "address[]"
+        },
+        {
+          "name": "weightsBps",
+          "type": "uint16[]",
+          "internalType": "uint16[]"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "sip",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "amountUsdc",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "interval",
+          "type": "uint32",
+          "internalType": "uint32"
+        },
+        {
+          "name": "runsLeft",
+          "type": "uint32",
+          "internalType": "uint32"
+        },
+        {
+          "name": "nextAt",
+          "type": "uint64",
+          "internalType": "uint64"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "sipActive",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool",
+          "internalType": "bool"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "sipAmount",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "sipInterval",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint32",
+          "internalType": "uint32"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "sipNextAt",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint64",
+          "internalType": "uint64"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "sipRunsLeft",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint32",
+          "internalType": "uint32"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "targets",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "tokens",
+          "type": "address[]",
+          "internalType": "address[]"
+        },
+        {
+          "name": "weightsBps",
+          "type": "uint16[]",
+          "internalType": "uint16[]"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "templates",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract ITemplateRegistry"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "usdc",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "withdraw",
+      "inputs": [
+        {
+          "name": "token",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "to",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "withdrawAll",
+      "inputs": [
+        {
+          "name": "to",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "event",
+      "name": "Deposited",
+      "inputs": [
+        {
+          "name": "from",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "usdcAmount",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "PausedSet",
+      "inputs": [
+        {
+          "name": "paused",
+          "type": "bool",
+          "indexed": false,
+          "internalType": "bool"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "Rebalanced",
+      "inputs": [
+        {
+          "name": "caller",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "valueBeforeE18",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "valueAfterE18",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "maxDriftBps",
+          "type": "uint16",
+          "indexed": false,
+          "internalType": "uint16"
+        },
+        {
+          "name": "tipUsdc",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "SipExecuted",
+      "inputs": [
+        {
+          "name": "caller",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "amountUsdc",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "runsLeft",
+          "type": "uint32",
+          "indexed": false,
+          "internalType": "uint32"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "SipSet",
+      "inputs": [
+        {
+          "name": "amountUsdc",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "interval",
+          "type": "uint32",
+          "indexed": false,
+          "internalType": "uint32"
+        },
+        {
+          "name": "runsLeft",
+          "type": "uint32",
+          "indexed": false,
+          "internalType": "uint32"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "TargetsSet",
+      "inputs": [
+        {
+          "name": "tokens",
+          "type": "address[]",
+          "indexed": false,
+          "internalType": "address[]"
+        },
+        {
+          "name": "weightsBps",
+          "type": "uint16[]",
+          "indexed": false,
+          "internalType": "uint16[]"
+        },
+        {
+          "name": "templateId",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "templateVersion",
+          "type": "uint32",
+          "indexed": false,
+          "internalType": "uint32"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "TradeExecuted",
+      "inputs": [
+        {
+          "name": "tokenIn",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "tokenOut",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "amountIn",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "amountOut",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "venue",
+          "type": "address",
+          "indexed": false,
+          "internalType": "address"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "Withdrawn",
+      "inputs": [
+        {
+          "name": "to",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "token",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "error",
+      "name": "AlreadyInitialized",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "BadParams",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "BadWeights",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "Cooldown",
+      "inputs": [
+        {
+          "name": "readyAt",
+          "type": "uint64",
+          "internalType": "uint64"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "IdOutOfRange",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "NotNeeded",
+      "inputs": [
+        {
+          "name": "maxDriftBps",
+          "type": "uint16",
+          "internalType": "uint16"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "NotOwner",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "Paused_",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "ReentrantCall",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "SafeERC20FailedOperation",
+      "inputs": [
+        {
+          "name": "token",
+          "type": "address",
+          "internalType": "address"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "SipInactive",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "SipNotDue",
+      "inputs": [
+        {
+          "name": "dueAt",
+          "type": "uint64",
+          "internalType": "uint64"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "SlippageExceeded",
+      "inputs": [
+        {
+          "name": "got",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "min",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "TooManyAssets",
+      "inputs": []
+    }
+  ]
+}

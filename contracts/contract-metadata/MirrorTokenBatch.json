@@ -1,0 +1,51 @@
+{
+  "contractAddress": "0x6b12ce46563c92ebf9148dd33e41cba9699c24f2",
+  "network": "ARC-TESTNET",
+  "deployerWalletId": "3c2464b2-8369-52e2-a782-800bbeca5396",
+  "contract_code_path": "/home/user/app/contracts/MirrorTokenBatch.sol",
+  "contract_compiled_code_path": "/home/user/app/contracts/out/MirrorTokenBatch.sol/MirrorTokenBatch.json",
+  "contract_network_and_links": {
+    "Arc Testnet": "https://explorer.testnet.arc.io/address/0x6b12ce46563c92ebf9148dd33e41cba9699c24f2"
+  },
+  "contract_deployments": [
+    {
+      "chain": "Arc Testnet",
+      "address": "0x6b12ce46563c92ebf9148dd33e41cba9699c24f2",
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0x6b12ce46563c92ebf9148dd33e41cba9699c24f2",
+      "txHash": "0xfc712a8466eceb5b1b542d6754246f7bb659fd93c1bd6c8bed1f988a5b413f5f",
+      "deployedAt": "2026-11-06T08:14:31.276Z"
+    }
+  ],
+  "abi": [
+    {
+      "type": "constructor",
+      "inputs": [
+        {
+          "name": "venue",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "tokens",
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract MirrorToken"
+        }
+      ],
+      "stateMutability": "view"
+    }
+  ]
+}

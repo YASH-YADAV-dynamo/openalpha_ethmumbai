@@ -1,0 +1,47 @@
+{
+  "contractAddress": "0xf1f34a52f70325581736aa5f4ad60423471460a1",
+  "network": "ARC-TESTNET",
+  "deployerWalletId": "3c2464b2-8369-52e2-a782-800bbeca5396",
+  "contract_code_path": "/home/user/app/contracts/SeedRelay.sol",
+  "contract_compiled_code_path": "/home/user/app/contracts/out/SeedRelay.sol/SeedRelay.json",
+  "contract_network_and_links": {
+    "Arc Testnet": "https://explorer.testnet.arc.io/address/0xf1f34a52f70325581736aa5f4ad60423471460a1"
+  },
+  "contract_deployments": [
+    {
+      "chain": "Arc Testnet",
+      "address": "0xf1f34a52f70325581736aa5f4ad60423471460a1",
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0xf1f34a52f70325581736aa5f4ad60423471460a1",
+      "txHash": "0x19f424b5e1791a5527c3cf77cf3825512c5757bed46afc180ced1066d8caa00f",
+      "deployedAt": "2026-11-06T08:16:15.321Z"
+    }
+  ],
+  "abi": [
+    {
+      "type": "constructor",
+      "inputs": [
+        {
+          "name": "core",
+          "type": "address",
+          "internalType": "contract IArcTreasuryCore"
+        },
+        {
+          "name": "targets",
+          "type": "address[]",
+          "internalType": "address[]"
+        },
+        {
+          "name": "datas",
+          "type": "bytes[]",
+          "internalType": "bytes[]"
+        },
+        {
+          "name": "sig",
+          "type": "bytes",
+          "internalType": "bytes"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    }
+  ]
+}

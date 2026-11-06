@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme tokens (RGB triplets). Dark is the default; <html class="light"> switches. */
+:root, .dark {
+  --bg: 10 11 14;        --panel: 18 20 25;     --panel2: 26 29 36;   --line: 38 42 51;
+  --ink: 236 238 242;    --muted: 148 155 168;  --faint: 92 99 112;
+  --accent: 198 244 50;  --onaccent: 14 16 20;
+  --up: 52 211 153;      --down: 248 113 113;   --warn: 251 191 36;
+  color-scheme: dark;
+}
+.light {
+  --bg: 248 249 251;     --panel: 255 255 255;  --panel2: 242 244 247; --line: 226 230 236;
+  --ink: 16 19 26;       --muted: 92 99 112;    --faint: 148 155 168;
+  --accent: 90 120 0;    --onaccent: 255 255 255;
+  --up: 5 150 105;       --down: 220 38 38;     --warn: 180 120 0;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+html, body { background: rgb(var(--bg)); color: rgb(var(--ink)); }
+body { margin: 0; font-family: Inter, system-ui, sans-serif; min-height: 100dvh; -webkit-font-smoothing: antialiased; }
+.num { font-variant-numeric: tabular-nums; }
+
+@layer components {
+  .card { @apply rounded-2xl border border-line bg-panel; }
+  .btn { @apply inline-flex h-10 items-center justify-center gap-2 rounded-xl bg-accent px-4 text-sm font-semibold text-onaccent transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-40; }
+  .btn-ghost { @apply inline-flex h-10 items-center justify-center gap-2 rounded-xl border border-line px-4 text-sm font-medium text-ink transition hover:bg-panel2 disabled:cursor-not-allowed disabled:opacity-40; }
+  .field { @apply h-10 w-full rounded-xl border border-line bg-panel2 px-3 text-sm text-ink outline-none placeholder:text-faint focus:border-accent; }
+  .eyebrow { @apply font-mono text-[11px] uppercase tracking-[0.08em] text-muted; }
+  .tab { @apply rounded-lg px-3 py-1.5 text-sm text-muted transition hover:text-ink; }
+  .tab-on { @apply bg-panel2 text-ink; }
+  .badge { @apply inline-flex items-center rounded-md px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-wide; }
+}
+
+/* "Built with Arc Studio" badge offset (main.tsx reads it): above the mobile tab bar / desktop status bar. */
+:root { --badge-bottom: calc(68px + env(safe-area-inset-bottom)); }
+@media (min-width: 768px) { :root { --badge-bottom: 40px; } }
+
+/* Ticker tape: two copies of the list slide left by one copy's width; pauses on hover/focus. */
+@keyframes tape { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.tape { animation: tape 60s linear infinite; }
+.tape:hover, .tape:focus-within { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .tape { animation: none; } }

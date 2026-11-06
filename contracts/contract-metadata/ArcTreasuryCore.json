@@ -1,0 +1,191 @@
+{
+  "contractAddress": "0x1dcb59c9afab2e0f660206a9c8233454d6e3a6fc",
+  "network": "ARC-TESTNET",
+  "deployerWalletId": "3c2464b2-8369-52e2-a782-800bbeca5396",
+  "contract_code_path": "/home/user/app/contracts/ArcTreasuryCore.sol",
+  "contract_compiled_code_path": "/home/user/app/contracts/out/ArcTreasuryCore.sol/ArcTreasuryCore.json",
+  "contract_network_and_links": {
+    "Arc Testnet": "https://explorer.testnet.arc.io/address/0x1dcb59c9afab2e0f660206a9c8233454d6e3a6fc"
+  },
+  "contract_deployments": [
+    {
+      "chain": "Arc Testnet",
+      "address": "0x1dcb59c9afab2e0f660206a9c8233454d6e3a6fc",
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0x1dcb59c9afab2e0f660206a9c8233454d6e3a6fc",
+      "txHash": "0xa683fde9b505ca4fc42752d63ad2f8f1de7c05fc3385509992baf5b6dfeed631",
+      "deployedAt": "2026-11-06T08:14:22.294Z"
+    }
+  ],
+  "abi": [
+    {
+      "type": "constructor",
+      "inputs": [
+        {
+          "name": "usdc",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "signer_",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "digest",
+      "inputs": [
+        {
+          "name": "targets",
+          "type": "address[]",
+          "internalType": "address[]"
+        },
+        {
+          "name": "datas",
+          "type": "bytes[]",
+          "internalType": "bytes[]"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32",
+          "internalType": "bytes32"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "exec",
+      "inputs": [
+        {
+          "name": "targets",
+          "type": "address[]",
+          "internalType": "address[]"
+        },
+        {
+          "name": "datas",
+          "type": "bytes[]",
+          "internalType": "bytes[]"
+        },
+        {
+          "name": "sig",
+          "type": "bytes",
+          "internalType": "bytes"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "mirrorVenue",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract MirrorVenue"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "registry",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract AssetRegistry"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "signer",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "templates",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract TemplateRegistry"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "event",
+      "name": "Executed",
+      "inputs": [
+        {
+          "name": "calls",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "error",
+      "name": "AlreadyExecuted",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "BadSignature",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "ECDSAInvalidSignature",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "ECDSAInvalidSignatureLength",
+      "inputs": [
+        {
+          "name": "length",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "ECDSAInvalidSignatureS",
+      "inputs": [
+        {
+          "name": "s",
+          "type": "bytes32",
+          "internalType": "bytes32"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "LengthMismatch",
+      "inputs": []
+    }
+  ]
+}

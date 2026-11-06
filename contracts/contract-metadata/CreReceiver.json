@@ -1,0 +1,129 @@
+{
+  "contractAddress": "0x97f154f7991948bcd218e96300a50b053eec04dd",
+  "network": "ARC-TESTNET",
+  "deployerWalletId": "3c2464b2-8369-52e2-a782-800bbeca5396",
+  "contract_code_path": "/home/user/app/contracts/CreReceiver.sol",
+  "contract_compiled_code_path": "/home/user/app/contracts/out/CreReceiver.sol/CreReceiver.json",
+  "contract_network_and_links": {
+    "Arc Testnet": "https://explorer.testnet.arc.io/address/0x97f154f7991948bcd218e96300a50b053eec04dd"
+  },
+  "contract_deployments": [
+    {
+      "chain": "Arc Testnet",
+      "address": "0x97f154f7991948bcd218e96300a50b053eec04dd",
+      "explorerUrl": "https://explorer.testnet.arc.io/address/0x97f154f7991948bcd218e96300a50b053eec04dd",
+      "txHash": "0xdb3689a55a08ffaa13c52facb18673ca51363bde8ad5206b1ddccd9f7ce964b9",
+      "deployedAt": "2026-11-06T11:53:08.953Z"
+    }
+  ],
+  "abi": [
+    {
+      "type": "constructor",
+      "inputs": [
+        {
+          "name": "forwarder_",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "registry_",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "forwarder",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "onReport",
+      "inputs": [
+        {
+          "name": "metadata",
+          "type": "bytes",
+          "internalType": "bytes"
+        },
+        {
+          "name": "report",
+          "type": "bytes",
+          "internalType": "bytes"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "registry",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract IReceiver"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "supportsInterface",
+      "inputs": [
+        {
+          "name": "interfaceId",
+          "type": "bytes4",
+          "internalType": "bytes4"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool",
+          "internalType": "bool"
+        }
+      ],
+      "stateMutability": "pure"
+    },
+    {
+      "type": "event",
+      "name": "Relayed",
+      "inputs": [
+        {
+          "name": "kind",
+          "type": "uint8",
+          "indexed": false,
+          "internalType": "uint8"
+        },
+        {
+          "name": "reportBytes",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "error",
+      "name": "NotForwarder",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "ZeroAddress",
+      "inputs": []
+    }
+  ]
+}
